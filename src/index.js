@@ -4,6 +4,8 @@ import { App } from "./App";
 import {Terms} from './components/Terms';
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import logo from './logos/Logo2.jpeg';
+import "./Index.css";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +14,9 @@ ReactDOM.render(
         <div className="container-fluid">
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
+              <li className="nav-item">
+              <img src={logo} className="App-logo" alt="logo" />
+              </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/">
                   Home

@@ -115,7 +115,11 @@ export function App() {
             <span className="mb-2">Seleccion fecha para tu cita:</span>
             <DatePicker className="form-control mb-2" selected={startDate} onChange={date => setStartDate(date)} />
 
-            <input type="time" id="appt" name="appt"
+            <input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31"/>
+
+            <input className="form-control mb-2" type="time" id="appt" name="appt"
        min="09:00" max="18:00" required/>
 
             <input
